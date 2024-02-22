@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+<body>
+    <form action="process_form.php" method="post">
+        <label for="name">Особиста інформація - ваше ім’я:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="age">Ваш вік:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+        
+        <label for="password">Ваш пароль:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <label for="gender">Стать:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Чоловіча</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Жіноча</label><br><br>
+        
+        <label for="city">Виберіть своє місто:</label><br>
+        <select id="city" name="city">
+            <option value="city1">Київ</option>
+            <option value="city2">Львів</option>
+            <option value="city3">Житомир</option>
+        </select><br><br>
+        
+        <label for="message">Введіть своє повідомлення:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Надіслати">
+    </form>
+</body>
+</html>
